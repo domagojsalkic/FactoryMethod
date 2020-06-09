@@ -21,7 +21,7 @@ namespace FactoryMethodUnitTest
         public void CreateSquareX70Y100Width150Height70WithSquareCreatorFactoryMethod()
         {
             ICreator shapeCreator = new ShapeCreator();
-            Shape square = shapeCreator.CreateShape(GeometryShape.SQUARE, 70, 100, 150, 70);
+            IShape square = shapeCreator.CreateShape(GeometryShape.SQUARE, 70, 100, 150, 70);
             Assert.AreEqual(70,((Square)square).rectangle.X);
             Assert.AreEqual(30,((Square)square).rectangle.Y);
             Assert.AreEqual(150,((Square)square).rectangle.Width);

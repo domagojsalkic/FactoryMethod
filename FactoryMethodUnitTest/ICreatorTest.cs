@@ -11,7 +11,7 @@ namespace FactoryMethodUnitTest
         public void CreatorGetsAnGeometryShapeEnumSquareAndShouldReturnSquareObject()
         {
             ICreator creator = new ShapeCreator();
-            Shape shape = creator.CreateShape(GeometryShape.SQUARE, 10, 10, 100, 100);
+            IShape shape = creator.CreateShape(GeometryShape.SQUARE, 10, 10, 100, 100);
             Assert.IsTrue(shape is Square);
         }        
         
@@ -19,7 +19,7 @@ namespace FactoryMethodUnitTest
         public void CreatorGetsAnGeometryShapeEnumEllipseAndShouldReturnEllipseObject()
         {
             ICreator creator = new ShapeCreator();
-            Shape shape = creator.CreateShape(GeometryShape.ELLIPSE, 10, 10, 100, 100);
+            IShape shape = creator.CreateShape(GeometryShape.ELLIPSE, 10, 10, 100, 100);
             Assert.IsTrue(shape is Ellipse);
         }
 
@@ -27,7 +27,7 @@ namespace FactoryMethodUnitTest
         public void AssertionFailedDialogShouldPopUpAndShapeMustBeNull()
         {
             ICreator creator = new ShapeCreator();
-            Shape shape = creator.CreateShape(GeometryShape.NONE, 0, 0, 0, 0);
+            IShape shape = creator.CreateShape(GeometryShape.NONE, 0, 0, 0, 0);
             Assert.IsTrue(shape is null);
         }
     }

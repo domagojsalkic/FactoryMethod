@@ -9,7 +9,7 @@ namespace FactoryMethod.Models
 {
     public class ShapeCreator : ICreator
     {
-        public Shape CreateShape(GeometryShape geometryShape, int x, int y, int width, int height)
+        public IShape CreateShape(GeometryShape geometryShape, int x, int y, int width, int height)
         {
             switch (geometryShape)
             {

@@ -61,7 +61,7 @@
     <Compile Include="Models\ICreator.cs" />
     <Compile Include="Models\Drawing.cs" />
     <Compile Include="Models\Ellipse.cs" />
-    <Compile Include="Models\Shape.cs" />
+    <Compile Include="Models\IShape.cs" />
     <Compile Include="Models\ShapeCreator.cs" />
     <Compile Include="Models\Square.cs" />
     <Compile Include="Program.cs" />
@@ -78,6 +78,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

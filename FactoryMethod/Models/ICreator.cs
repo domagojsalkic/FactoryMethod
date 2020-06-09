@@ -11,6 +11,6 @@ namespace FactoryMethod.Models
 
     public interface ICreator
     {
-        Shape CreateShape(GeometryShape geometryShape, int x, int y,int width, int height);
+        IShape CreateShape(GeometryShape geometryShape, int x, int y,int width, int height);
     }
 }

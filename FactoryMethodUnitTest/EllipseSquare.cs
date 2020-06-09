@@ -21,7 +21,7 @@ namespace FactoryMethodUnitTest
         public void CreateEllipseX100Y40Width10Height50WithSquareCreatorFactoryMethod()
         {
             ICreator shapeCreator = new ShapeCreator();
-            Shape ellipse = shapeCreator.CreateShape(GeometryShape.ELLIPSE,100,40,10,50);
+            IShape ellipse = shapeCreator.CreateShape(GeometryShape.ELLIPSE,100,40,10,50);
             Assert.AreEqual(100,((Ellipse)ellipse).rectangle.X);
             Assert.AreEqual(40,((Ellipse)ellipse).rectangle.Y);
             Assert.AreEqual(10,((Ellipse)ellipse).rectangle.Width);

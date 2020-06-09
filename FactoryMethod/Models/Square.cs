@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace FactoryMethod.Models
 {
-    public class Square : Shape
+    public class Square : IShape
     {
         public Square(int x, int y, int width, int height)
         {
@@ -20,7 +20,7 @@ namespace FactoryMethod.Models
             myPen = new Pen(Color.Black, 2);
         }
 
-        public  override void Draw(Graphics graphics)
+        public void Draw(Graphics graphics)
         {
             graphics.DrawRectangle(myPen, rectangle);
             graphics.FillRectangle(myBrush, rectangle);

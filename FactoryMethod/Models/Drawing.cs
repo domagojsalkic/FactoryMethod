@@ -13,12 +13,12 @@ namespace FactoryMethod.Models
         public Drawing()
         {
             creator = new ShapeCreator();
-            shapes = new List<Shape>();
+            shapes = new List<IShape>();
         }
 
         public void DrawShape(GeometryShape geometryShape, int x, int y, int width, int height)
         {
-            Shape shape = creator.CreateShape(geometryShape, x, y, width, height);
+            IShape shape = creator.CreateShape(geometryShape, x, y, width, height);
             if (shape != null)
             {
                 shapes.Add(shape);
@@ -38,6 +38,6 @@ namespace FactoryMethod.Models
         }
 
         private ICreator creator;
-        private List<Shape> shapes;
+        private List<IShape> shapes;
     }
 }

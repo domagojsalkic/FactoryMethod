@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.Models
 {
-    public class Ellipse : Shape
+    public class Ellipse : IShape
     {
         public Ellipse(int x, int y, int width, int height)
         {
@@ -19,7 +19,7 @@ namespace FactoryMethod.Models
             myPen = new Pen(Color.Black, 2);
         }
 
-        public override void Draw(Graphics graphics)
+        public void Draw(Graphics graphics)
         {
             graphics.DrawEllipse(myPen,rectangle);
             graphics.FillEllipse(myBrush,rectangle);

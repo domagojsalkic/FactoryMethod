@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.Models
 {
-    public abstract class Shape
+    public interface IShape
     {
-        public abstract void Draw(Graphics graphics);
+        void Draw(Graphics graphics);
     }
 }
