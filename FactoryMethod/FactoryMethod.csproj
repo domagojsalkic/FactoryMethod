@@ -58,7 +58,7 @@
     <Compile Include="FactoryMethodGUI.Designer.cs">
       <DependentUpon>FactoryMethodGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Creator.cs" />
+    <Compile Include="Models\ICreator.cs" />
     <Compile Include="Models\Drawing.cs" />
     <Compile Include="Models\Ellipse.cs" />
     <Compile Include="Models\Shape.cs" />

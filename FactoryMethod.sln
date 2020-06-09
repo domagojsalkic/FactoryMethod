@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{D4BDC71B-866B-4C19-AA8C-CECC9CF62915}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodUnitTest", "FactoryMethodUnitTest\FactoryMethodUnitTest.csproj", "{6B1B8805-BF91-4FB9-979B-A00EFDE5C7F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D4BDC71B-866B-4C19-AA8C-CECC9CF62915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4BDC71B-866B-4C19-AA8C-CECC9CF62915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4BDC71B-866B-4C19-AA8C-CECC9CF62915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B1B8805-BF91-4FB9-979B-A00EFDE5C7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1B8805-BF91-4FB9-979B-A00EFDE5C7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1B8805-BF91-4FB9-979B-A00EFDE5C7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1B8805-BF91-4FB9-979B-A00EFDE5C7F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

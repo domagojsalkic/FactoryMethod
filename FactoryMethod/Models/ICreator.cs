@@ -5,7 +5,8 @@ namespace FactoryMethod.Models
     public enum GeometryShape
     {
         SQUARE,
-        ELLIPSE
+        ELLIPSE,
+        NONE
     }
 
     public interface ICreator
