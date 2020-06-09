@@ -13,7 +13,7 @@ namespace FactoryMethod.Models
         public Square(int x, int y, int width, int height)
         {
             rectangle.X = x;
-            rectangle.Y= y;
+            rectangle.Y = y - height;
             rectangle.Width = width;
             rectangle.Height = height;
             myBrush = new SolidBrush(Color.Red);
@@ -23,7 +23,7 @@ namespace FactoryMethod.Models
         public  override void Draw(Graphics graphics)
         {
             graphics.DrawRectangle(myPen, rectangle);
-            graphics.FillRectangle(myBrush,rectangle);
+            graphics.FillRectangle(myBrush, rectangle);
         }
 
         public readonly Pen myPen;
