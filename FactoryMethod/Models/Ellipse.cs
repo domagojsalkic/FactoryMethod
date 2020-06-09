@@ -25,8 +25,8 @@ namespace FactoryMethod.Models
             graphics.FillEllipse(myBrush,rectangle);
         }
 
-        private readonly Pen myPen;
-        private readonly Brush myBrush;
-        private readonly Rectangle rectangle;
+        public readonly Pen myPen;
+        public readonly Brush myBrush;
+        public readonly Rectangle rectangle;
     }
 }
