@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace FactoryMethod.Models
+{
+    public class Square : Shape
+    {
+        public Square(int x, int y, int width, int height)
+        {
+            rectangle.X = x;
+            rectangle.Y= y;
+            rectangle.Width = width;
+            rectangle.Height = height;
+            myBrush = new SolidBrush(Color.Red);
+            myPen = new Pen(Color.Black, 2);
+        }
+
+        public  override void Draw(Graphics graphics)
+        {
+            graphics.DrawRectangle(myPen, rectangle);
+            graphics.FillRectangle(myBrush,rectangle);
+        }
+
+        private readonly Pen myPen;
+        private readonly Brush myBrush;
+        private readonly Rectangle rectangle;
+    }
+}
